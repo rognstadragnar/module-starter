@@ -16,11 +16,9 @@
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.8.0"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "scripts": {
-    "release":
-      "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
     "bundle:main": "microbundle",
     "dev:main": "microbundle watch --compress false",
     "prepare": "npm run build",
@@ -28,5 +26,8 @@
     "clean": "rimraf dist",
     "test": "echo 'should add some tests.. :)'"
   },
-  "files": ["src", "dist"]
+  "files": [
+    "src",
+    "dist"
+  ]
 }
