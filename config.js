@@ -1,9 +1,6 @@
 const config = {
   properties: ['name', 'description'],
-  hooks: {
-    preinstall: [],
-    postinstall: []
-  }
+  hooks: ['git init', 'npm i']
 }
 
 module.exports = { config }
