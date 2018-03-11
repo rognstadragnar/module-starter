@@ -1,4 +1,4 @@
-module.exports = (userInfo, chalk) => ({
+module.exports = (user, chalk) => ({
   name: 'Module starter',
   description:
     'A starter for building npm modules with Typescript, flow or ES6 using microbundle',
@@ -19,9 +19,14 @@ module.exports = (userInfo, chalk) => ({
       name: 'description',
       type: 'text',
       message: 'Enter a description',
-      validation: response => response && response.length < 350,
+      validation: response => (response ? response.length < 350 : true),
       errorMessage:
         'You must enter a description and it must be shorter than 350 characters'
+    },
+    {
+      name: 'username',
+      message: 'Enter username and email',
+      initial: `${user.name} ${user.email ? '(' + user.email + ')' : ''}`
     }
   ],
   commands: {
