@@ -9,7 +9,8 @@ module.exports = (userInfo, chalk) => ({
       message: 'Enter your name',
       validation: response => {
         // valid npm-name
-        ;/^[^\.^\_]([a-z\-\_\.]){1,214}$/.test(response)
+        const regex = /^[^\.^\_]([a-z\-\_\.]){1,214}$/
+        return regex.test(response)
       },
       errorMessage:
         'Please enter a valid name without whitespace and that does not start with a dot or an underscore.'
