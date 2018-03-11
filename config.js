@@ -1,6 +1,6 @@
-module.exports = (user, chalk) => { 
+module.exports = (user, chalk) => {
   console.log(user)
-  
+
   return {
     name: 'Module starter',
     description:
@@ -36,4 +36,4 @@ module.exports = (user, chalk) => {
       postInstall: ['git init', 'npm i']
     }
   }
-})
+}
