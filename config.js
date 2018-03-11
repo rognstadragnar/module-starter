@@ -27,6 +27,7 @@ module.exports = (user, chalk) => {
           'You must enter a description and it must be shorter than 350 characters'
       },
       {
+        type: 'text',
         name: 'username',
         message: 'Enter username and email',
         initial: `${user.name} ${user.email ? '(' + user.email + ')' : ''}`
