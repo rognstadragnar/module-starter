@@ -2,6 +2,11 @@ module.exports = (user, chalk) => ({
   name: 'Module starter',
   description:
     'A starter for building npm modules with Typescript, flow or ES6 using microbundle',
+  templateLanguage: 'ejs',
+  ignore: {
+    rename: [],
+    copy: []
+  },
   properties: [
     {
       name: 'name',

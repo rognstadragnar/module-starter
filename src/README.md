@@ -1,4 +1,4 @@
-# {{ name }}
+# <%= name %>
 
 ```sh
 git clone https://github.com/rognstadragnar/module-starter.git
