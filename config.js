@@ -1,7 +1,4 @@
-module.exports = (user, chalk) => {
-  console.log(user)
-
-  return {
+module.exports = (user, chalk) => ({
     name: 'Module starter',
     description:
       'A starter for building npm modules with Typescript, flow or ES6 using microbundle',
@@ -37,4 +34,4 @@ module.exports = (user, chalk) => {
       postInstall: ['git init', 'npm i']
     }
   }
-}
+})
