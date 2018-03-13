@@ -1,6 +1,6 @@
 {
   "name": "{{ name }}",
-  "somekey": "{{ name }} {{ username }} {{  description }}",
+  "somekey": "{{ name }} {{ username }} {{ description }}",
   "description": "{{ description }}",
   "author": "Ragnar Rognstad (http://rognstad.me)",
   "repository": "rognstadragnar/module-starter",
