@@ -11,7 +11,7 @@ npm i
 or with degit:
 
 ```sh
-degit rognstadragnar/{{ name } my-module
+degit rognstadragnar/{{ name }} my-module
 cd my-module
 # Update package.json and README to make it your own
 npm i
